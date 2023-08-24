@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.index.css">
+    <script src="assets/js/script.index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <!--
+    // Primeiro passo vai ser criar uma div pois indentificamos que é preciso de um div controle/pai. essa div geralmente é chamada de container. ela precisará de um id ou class.
+ -->
+
+    <div id="container">
+     
+        <!--
+        dentro dessa div, indentificamos um h1/h2, 5 inputs e 1 botão.
+        então iremos crias as tags.
+      -->
+        <!--
+        criaremos o h2, que possui uma class ou id e seu texto/valor.
+      -->
+        <h2 id="titulo-principal"> Cadastrar Jogos</h2>
+        <!--
+        separar os inputs e labels e o botão, em apenas um bloco/div que seja so eles, ela precisara de um id ou class
+      -->
+      <div id="input-container">
+        <label for="input-titulo">Título:</label>
+        <input type="text" id="input-titulo" name="input-titulo" class="input"/>
+
+        <label for="input-preco">Preço:</label>
+        <input type="number" id="input-preco" name="input-preco"  class="input"/>
+
+        <label for="input-descricao">Descrição:</label>
+        <input type="text" id="input-descricao" name="input-descricao"  class="input"/>
+
+        <label for="input-plataforma">Plataforma:</label>
+        <input type="text" id="input-plataforma" name="input-plataforma"  class="input"/>
+
+        <label for="input-imglink">Link da imagem:</label>
+        <input type="text" id="input-imglink" name="input-imglink"  class="input"/>
+
+       <div id="msg">
+
+       </div>
+</div>
+        <button id="botao-Criarjogo" class="button" onclick="comporJogo()">Cadastrar Jogo</button>
+  
+    </div>
+    <div id="containerLista">
+
+    </div>
+</body>
+
+</html>
